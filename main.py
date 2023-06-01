@@ -132,7 +132,7 @@ while run:
         dist = get_dist(sel_planet.x, sel_planet.y, star.x, star.y)
 
         #Displaying vel and dist
-        stats_text = stats_font.render(f"Instantaneous Velocity: {vel}m/s; Distance from star: {round(dist)}m", True, (255, 255, 255))
+        stats_text = stats_font.render(f"Speed: {vel}m/s; Distance from star: {round(dist)}m", True, (255, 255, 255))
         win.blit(stats_text, (width/2 - stats_text.get_width()/2, planet_text.get_height()))
 
         #Drawing lines and traingle
